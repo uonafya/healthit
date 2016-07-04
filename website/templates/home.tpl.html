@@ -1,0 +1,219 @@
+{% extends "base-main.html" %} {% load cms_tags %} {% block title %}{% page_attribute "page_title" %}{% endblock title %} {% block content %}
+<!-- slider -->
+<div id="slider">
+    <!-- revolution slider begin -->
+    <div class="fullwidthbanner-container">
+        <div id="revolution-slider">
+            <ul>
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="2500" data-delay="5000">
+                            <!--  BACKGROUND IMAGE -->
+                            {% placeholder 'slider-home' %}
+
+                            <img src="/static/img-rev-slider/bg-1.jpg" alt="">
+
+                            <div class="tp-caption lft custom-font-2"
+                                data-x="center"
+                                data-y="184"
+                                data-speed="800"
+                                data-start="800"
+                                data-easing="easeInOutCubic">
+                                Strengthening
+                            </div>
+
+                            <div class="tp-caption sfb custom-font-2"
+                                data-x="center"
+                                data-y="250"
+                                data-speed="800"
+                                data-start="1400"
+                                data-easing="easeInOutCubic">
+                                Health Information Systems
+                            </div>
+
+                            <div class="tp-caption sfb"
+                                data-x="center"
+                                data-y="330"
+                                data-speed="800"
+                                data-start="1600"
+                                data-easing="easeInOutCubic">
+                                <a class="btn btn-slider" href="#">Our Services</a>&nbsp;&nbsp;<a class="btn btn-border-slider" href="#">Read More</a>
+                            </div>
+                        </li>
+            </ul>
+        </div>
+    </div>
+    <!-- revolution slider close -->
+</div>
+<!-- slider close -->
+
+<div class="clearfix"></div>
+
+<!-- content begin -->
+<div id="content" class="no-padding">
+
+    <!-- section begin -->
+    <section id="section-about" class="bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    <img src="/static/images/about/we-are-thumb.jpg" alt="about image" class="img-responsive">
+                </div>
+                <div class="col-md-5 col-sm-5">
+                    <div class="about-box">
+                        <h2 class="box-title">What is C4HI?</h2>
+                        <div class="tiny-border"></div>
+                        <p>It stands for Center for Health Informatics, It is based at the University of Nairobi- School of Computing and Informatics</p>
+                        <ul class="list-style-1">
+                            <li>Building technical capacity</li>
+                            <li>Research</li>
+                            <li>Software development and support</li>
+                            <li>Consultancy</li>
+                        </ul>
+                        <div class="divider-single"></div>
+                        <a href="#" class="btn btn-primary btn-small">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="feature-box">
+                        <h2 class="box-title">Our Services</h2>
+                        <div class="tiny-border"></div>
+                        <div class="feature">
+                            {% placeholder 'services-home' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section close -->
+
+    <!-- section begin -->
+    <section id="section-project" class="no-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="latest-projects clearfix">
+                        <div class="latest-projects-intro">
+                            <h2 class="box-title">Latest Projects</h2>
+                            <div class="tiny-border-light"></div>
+                            <p>Some of our projects</p>
+                        </div>
+                        <div class="latest-projects-wrapper">
+                            <div id="latest-projects-items" class="latest-projects-items">
+                                <div class="item">
+                                  {% placeholder 'latest-projects' %}
+                                    <img src="/static/images/projects/small-2.jpg" alt="" class="img-responsive">
+                                    <div class="project-details">
+                                        <p class="folio-title"><a href="#">Plan For Your Bussiness</a></p>
+                                        <p class="folio-cate"><i class="fa fa-tag"></i><a href="#">Finance</a>, <a href="#">Marketing</a></p>
+                                        <div class="folio-buttons">
+                                            <a href="/static/images/projects/medium-1.jpg" title="Plan For Your Bussiness" class="folio"><i class="fa fa-search"></i></a>
+                                            <a href="#"><i class="fa fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section close -->
+
+    <!-- section begin -->
+    <section id="section-news" class="bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="latest-blog-posts">
+                        <h2 class="box-title">Latest News and Events</h2>
+                        <div class="compact-buttons">
+                            <div class="latest-prev compact-prev"><i class="fa fa-angle-left"></i></div>
+                            <div class="latest-next compact-next"><i class="fa fa-angle-right"></i></div>
+                        </div>
+                        <div class="tiny-border"></div>
+                        <div class="latest-news-items">
+                          {% placeholder 'latest-news' %}
+                            <div class="item">
+                                <div class="latest-blog-post-img">
+                                    <img src="/static/images/news/thumb/thumb-1.jpg" alt="image name">
+                                    <div class="latest-blog-post-date">
+                                        06 <span>May</span>
+                                    </div>
+                                </div>
+                                <div class="latest-blog-post-details">
+                                    <p class="title"><a href="#">Help your business to success</a></p>
+                                    <p>Morbi vehicula a nibh in commodo. Aliquam quis dolor eget lectus pulvinar eu rhoncus ligula. Ut leo mauris, molestie imperdiet consequat in, varius ac sapien.</p>
+                                    <div class="latest-blog-post-data">
+                                        <span class="tags"><i class="fa fa-tags"></i> <a href="#">Development,</a> <a href="#">Maketing</a></span>
+                                        <span class="btn-read"><a href="#"><i class="fa fa-plus-square"></i> Read more</a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section close -->
+    <section id="section-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonials-slider-wrapper">
+                        <h2 class="box-title">Testimonials</h2>
+                        <div class="compact-buttons">
+                            <div class="testi-prev compact-prev"><i class="fa fa-angle-left"></i></div>
+                            <div class="testi-next compact-next"><i class="fa fa-angle-right"></i></div>
+                        </div>
+                        <div class="tiny-border"></div>
+                        <div class="testimonials-slider">
+                            <div class="item">
+                              {% placeholder 'testimonials' %}
+                                <div class="testi-boxes">
+                                    <blockquote>
+                                        Morbi auctor vel mauris facilisis lacinia. Aenean suscipit lorem leo, et hendrerit odio fermentum et. Donec ac dolor eros. Mauris arcu nunc, iaculis sit amet lacus iaculis, faucibus faucibus nunc. Vestibulum sit amet lacinia massa
+                                    </blockquote>
+                                    <div class="testi-info clearfix">
+                                        <img alt="" src="/static/images/testimonial/thumb-1.png" class="img-circle">
+                                        <div class="testi-details">
+                                            <span>Cheryl Cruz</span> Maketing Manager
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section close -->
+    <!-- section begin -->
+    <section id="section-partner" class="bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="box-title inline">Our Partners</h2>
+                    <div class="compact-buttons">
+                        <div class="partner-prev compact-prev"><i class="fa fa-angle-left"></i></div>
+                        <div class="partner-next compact-next"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="tiny-border"></div>
+                    <div id="client-logo" class="our-partner">
+                        <div class="item">
+                          {% placeholder 'partners' %}
+                          <img src="/static/images/client/envato.png" alt="envato">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section close -->
+</div>
+{% endblock content %}

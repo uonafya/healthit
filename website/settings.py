@@ -179,7 +179,9 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('page.html', 'Page'),
-    ('feature.html', 'Page with Feature')
+    ('feature.html', 'Page with Feature'),
+    ('home.tpl.html', 'Home'),
+    ('about-us.tpl.html', 'About Us')
 )
 
 CMS_PERMISSION = True
@@ -199,7 +201,7 @@ DATABASES = {
 }
 
 MIGRATION_MODULES = {
-    
+
 }
 
 THUMBNAIL_PROCESSORS = (

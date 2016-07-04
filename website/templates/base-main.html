@@ -1,0 +1,195 @@
+{% load cms_tags staticfiles sekizai_tags menu_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>C4HI-{% block title %}{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="c4hi-uon">
+
+    <!-- Favicons
+    ================================================== -->
+    <!-- <link rel="icon" href="{% static '/static/images/favicon.png' %}" type="image/x-icon"> -->
+    <!-- LOAD CSS FILES -->
+       <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
+       <!-- color scheme -->
+       <link rel="stylesheet" href="{% static 'switcher/demo.css' %}" type="text/css">
+       <link rel="stylesheet" href="{% static 'switcher/colors/blue.css' %}" type="text/css" id="colors">
+       {% render_block "css" %}
+
+</head>
+
+<body>
+  {% cms_toolbar %}
+    <!-- Preload /static/images start //-->
+    <div class="images-preloader" id="images-preloader">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- Preload /static/images end //-->
+
+    <div id="wrapper">
+
+        <!-- header begin -->
+        <header class="site-header-3 site-header">
+            <!-- Main bar start -->
+            <div id="sticked-menu" class="main-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <!-- logo begin -->
+                            <div id="logo" class="pull-left">
+                                <a href="">
+                                    <img src="{% static 'images/logo.png' %}" alt="" class="logo">
+                                </a>
+                            </div>
+                            <!-- logo close -->
+
+                            <!-- Header Group Button Right begin -->
+                            <div class="header-buttons pull-right hidden-xs hidden-sm">
+
+                                <div class="header-contact">
+                                    <ul class="clearfix">
+                                        <li class="phone"><i class="fa fa-map-marker"></i> <span>Riverside Drive, Chiromo</span></li>
+                                        <li class="border-line">|</li>
+                                        <li class="phone"><i class="fa fa-building-o"></i> <span>SCI - UoN</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- Header Group Button Right close -->
+
+                            <!-- desktop menu begin -->
+                            <nav id="desktop-menu" class="site-desktop-menu hidden-xs hidden-sm">
+                                <ul class="clearfix">
+                                  {% show_menu 0 1 100 100 "menu.html" %}
+                                </ul>
+                            </nav>
+                            <!-- desktop menu close -->
+
+                            <!-- btn-mobile menu begin -->
+                            <a id="show-mobile-menu" class="btn-mobile-menu hidden-lg hidden-md"><i class="fa fa-bars"></i></a>
+                            <!-- btn-mobile menu close -->
+
+                            <!-- mobile menu begin -->
+                            <nav id="mobile-menu" class="site-mobile-menu hidden-lg hidden-md">
+                                <ul></ul>
+                            </nav>
+                            <!-- mobile menu close -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <div class="gray-line"></div>
+        {% block sub-header %}
+        {% endblock sub-header %}
+        <div>
+          {% block content%}
+          {% endblock content%}
+        </div>
+        <!-- content close -->
+
+        <!-- footer begin -->
+        <footer class="footer-1 bg-color-1">
+
+            <!-- main footer begin -->
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="compact-widget">
+                                <div class="widget-inner">
+                                    <img class="logo-footer" src="{% static 'images/footer-logo.png' %}" alt="C4HI">
+                                    <p>Strengthening Health Information systems</p>
+                                    <div class="social-icons clearfix">
+                                        <a href="#" class="facebook tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-facebook"></i></a>
+                                        <a href="#" class="twitter tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="compact-widget">
+                                <h3 class="widget-title">Important Links</h3>
+                                <div class="widget-inner">
+                                    <ul>
+                                        <li><a href="#">Ministry of Health-Kenya</a></li>
+                                        <li><a href="#">University of Nairobi</a></li>
+                                        <li><a href="#">School of Computing and Informatics-UoN</a></li>
+                                        <li><a href="#">MSH</a></li>
+                                        <li><a href="#">USAID</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="compact-widget">
+                                <h3 class="widget-title">Contact Us</h3>
+                                <div class="widget-inner">
+                                    <p>Address: 30197 <br> 00100, University of Nairobi</p>
+                                    <p>Phone: +(254) 724 123 123</p>
+                                    <p>Email: c4hi@uonbi.ac.ke</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- main footer close -->
+
+            <!-- sub footer begin -->
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            Copyright &copy; 2016. C4HI.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sub footer close -->
+
+        </footer>
+        <!-- footer close -->
+
+    </div>
+
+    <a id="to-the-top" ><i class="fa fa-angle-up"></i></a>
+
+    <!-- LOAD JS FILES -->
+     <script src="{% static 'js/jquery.min.js' %}"></script>
+     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+     {% render_block "js" %}
+     <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+     <script src="{% static 'js/easing.js' %}"></script>
+     <script src="{% static 'js/owl.carousel.js' %}"></script>
+     <script src="{% static 'js/jquery.fitvids.js' %}"></script>
+     <script src="{% static 'js/wow.min.js' %}"></script>
+     <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+
+     <!-- Waypoints-->
+     <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+     <script src="{% static 'js/sticky.min.js' %}"></script>
+     <script src="{% static 'js/tipper.js' %}"></script>
+     <script src="{% static 'js/compact.js' %}"></script>
+       <script src="{% static 'js/custom-index1.js' %}"></script>
+
+     <!-- SLIDER REVOLUTION SCRIPTS  -->
+     <script type="text/javascript" src="{% static 'rs-plugin/js/jquery.themepunch.plugins.min.js' %}"></script>
+     <script type="text/javascript" src="{% static 'rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+     <script src="{% static 'js/revslider-custom.js' %}"></script>
+
+
+</body>
+</html>
