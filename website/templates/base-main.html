@@ -91,7 +91,7 @@
         <div class="gray-line"></div>
         {% block sub-header %}
         {% endblock sub-header %}
-        <div>
+        <div id="content" class="no-padding">
           {% block content%}
           {% endblock content%}
         </div>
@@ -104,11 +104,11 @@
             <div class="main-footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-3 col-sm-6">
                             <div class="compact-widget">
                                 <div class="widget-inner">
                                     <img class="logo-footer" src="{% static 'images/footer-logo.png' %}" alt="C4HI">
-                                    <p>Strengthening Health Information systems</p>
+                                    <p>Strengthening health information systems</p>
                                     <div class="social-icons clearfix">
                                         <a href="#" class="facebook tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-facebook"></i></a>
                                         <a href="#" class="twitter tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'><i class="fa fa-twitter"></i></a>
@@ -117,14 +117,14 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-3 col-sm-6">
                             <div class="compact-widget">
                                 <h3 class="widget-title">Important Links</h3>
                                 <div class="widget-inner">
                                     <ul>
-                                        <li><a href="#">Ministry of Health-Kenya</a></li>
-                                        <li><a href="#">University of Nairobi</a></li>
-                                        <li><a href="#">School of Computing and Informatics-UoN</a></li>
+                                        <li><a href="">Ministry of Health-Kenya</a></li>
+                                        <li><a href="https://wwww.uonbi.ac.ke">University of Nairobi</a></li>
+                                        <li><a href="http://sci.uonbi.ac.ke">School of Computing and Informatics-UoN</a></li>
                                         <li><a href="#">MSH</a></li>
                                         <li><a href="#">USAID</a></li>
                                     </ul>
@@ -132,7 +132,20 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="compact-widget">
+                                <h3 class="widget-title">Quick Links</h3>
+                                <div class="widget-inner">
+                                    <ul>
+                                        <li><a href="#">DHIS2 - Kenya</a></li>
+                                        <li><a href="#">HIS - ServiceDesk</a></li>
+                                        <li><a href="#">MFLv2</a></li>
+                                        <li><a href="#">JPRP</a></li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
                             <div class="compact-widget">
                                 <h3 class="widget-title">Contact Us</h3>
                                 <div class="widget-inner">

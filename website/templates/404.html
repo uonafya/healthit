@@ -1,0 +1,32 @@
+{% extends "base-main.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+<!-- content begin -->
+ <div id="content" class="no-padding">
+
+     <!-- section begin -->
+     <section id="section-404" class="no-padding">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-6 col-md-offset-1 col-sm-7">
+                     <div class="content-404 intro-text margin-top-170">
+                         <h2>404</h2>
+                         <p>Oop! We are sorry, the page not found!</p>
+                         <div class="divider-single"></div>
+                         <a href="" class="btn btn-primary">Back to Home</a>
+                     </div>
+                 </div>
+                 <div class="col-md-5 col-sm-5">
+                     <img alt="" src="images/404.png" class="img-responsive margin-top-30">
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- section close -->
+
+ </div>
+ <!-- content close -->
+{% endblock content %}
