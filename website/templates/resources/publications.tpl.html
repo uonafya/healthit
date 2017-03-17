@@ -1,5 +1,5 @@
 {% extends "base-main.html" %}
-{% load cms_tags %}
+{% load cms_tags staticfiles %}
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
@@ -22,5 +22,344 @@
 {% endblock sub-header %}
 <!-- Main Content -->
 {% block content %}
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="blog-list">
+                    <!-- post begin -->
+                    <article>
+                        <div class="post-media">
+                            <img alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                            <div class="post-date">
+                                <span class="date-day">17</span>
+                                <span class="date-month">March</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-title">
+                                <h5><a href="http://erepository.uonbi.ac.ke/handle/11295/61298" target="_blank">
+                                  Data driven decision making in Kenya’s healthcare Sector
+                                  </a></h5>
+                            </div>
+                            <div class="post-metadata">
+                                <span class="byline">
+                                    <i class="fa fa-users"></i>
+                                    <a href="#">Peter Waiganjo, Josphine Karuri</a>
+                                </span>
+                                <span class="cat-links">
+                                    <i class="fa fa-calendar-check-o"></i>
+                                    <a href="#">2013</a>
+                                </span>
+                            </div>
+                            <div class="post-entry">
+                                <p>
+                                Various health sector reviews done over the last decade highlighted
+                                stagnating or downward trends in health indices in the country,
+                                especially in maternal, newborn and child health. Among other factors,
+                                a health information system (HIS) that was weak and unable to provide the
+                                public health information necessary to inform timely health interventions was
+                                identified as one of the contributors to some of the declining health indices.
+                                Recognizing this critical role played by a functional HIS, in 2010 Kenya’s HIS
+                                Division spearheaded an overhaul of the existing system to replace it with the
+                                web-based District Health Information Software (DHIS2).
 
+                                </p>
+                                <p><a class="btn btn-border" href="http://erepository.uonbi.ac.ke/handle/11295/61298">Read more</a></p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-media">
+                            <img alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                            <div class="post-date">
+                                <span class="date-day">17</span>
+                                <span class="date-month">March</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-title">
+                                <h5><a href="http://erepository.uonbi.ac.ke/bitstream/handle/11295/85238/Karuri_Implementing%20a%20Web-based%20Routine%20Health.pdf?sequence=1&isAllowed=y" target="_blank">Implementing a web-based routine health information system in Kenya:
+                                   Factors affecting acceptance and use</a></h5>
+                            </div>
+                            <div class="post-metadata">
+                                <span class="byline">
+                                    <i class="fa fa-users"></i>
+                                    <a href="#">Josphine Karuri, Peter Waiganjo, Dan Orwa</a>
+                                </span>
+                                <span class="cat-links">
+                                    <i class="fa fa-calendar-check-o"></i>
+                                    <a href="#">2014</a>
+                                </span>
+                            </div>
+                            <div class="post-entry">
+                                <p>
+                                  All interviewees recognized the great opportunity that DHIS2 has presented for Kenya to
+                                  streamline its national health information. One key system characteristic that was
+                                  appreciated is the fact that is operated in open-access mode, enabling unrestricted access
+                                  to DHIS2 reports via the public login option. This has greatly eased dissemination and
+                                  access to public health information. Also recognized was that the DHIS2 system enables
+                                  undertaking of simple, customized
+                                </p>
+                                <p><a class="btn btn-border" href="http://erepository.uonbi.ac.ke/bitstream/handle/11295/85238/Karuri_Implementing%20a%20Web-based%20Routine%20Health.pdf?sequence=1&isAllowed=y">Read more</a></p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="post-media">
+                            <img alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                            <div class="post-date">
+                                <span class="date-day">17</span>
+                                <span class="date-month">March</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-title">
+                                <h5><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.677.7978&rep=rep1&type=pdf" target="_blank">Determinants of Acceptance and Use of DHIS2: Survey Instrument Validation and Preliminary Findings using PLS-SEM</a></h5>
+                            </div>
+                            <div class="post-metadata">
+                                <span class="byline">
+                                    <i class="fa fa-users"></i>
+                                    <a href="#">Josphine Karuri, Peter Waiganjo, Dan Orwa</a>
+                                </span>
+                                <span class="cat-links">
+                                    <i class="fa fa-calendar-check-o"></i>
+                                    <a href="#">2014</a>
+                                </span>
+                            </div>
+                            <div class="post-entry">
+                                <p>
+                                  Implementing Information and Communication Technology (ICT) systems in an
+                                  organization-wide setting is usually a costly venture, yet there is no guarantee that the
+                                  targeted users of such systems will adopt and use them effectively for the benefit of the
+                                  organization. Technology acceptance studies have been conducted widely and various
+                                  models developed in an attempt to predict the critical determinants of technology
+                                  acceptance, specifically from the users' perspective.
+                                </p>
+                                <p><a class="btn btn-border" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.677.7978&rep=rep1&type=pdf">Read more</a></p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-media">
+                            <img alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                            <div class="post-date">
+                                <span class="date-day">17</span>
+                                <span class="date-month">March</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-title">
+                                <h5><a href="http://ki.se/sites/default/files/assessing_lisaamaimurie.pdf" target="_blank">Assessing for interoperability between electronic health information systems using a
+                                   predictive, probabilistic interoperability model: A case study</a></h5>
+                            </div>
+                            <div class="post-metadata">
+                                <span class="byline">
+                                    <i class="fa fa-users"></i>
+                                    <a href="#">Lisa Amai Murie</a>
+                                </span>
+                                <span class="cat-links">
+                                    <i class="fa fa-calendar-check-o"></i>
+                                    <a href="#">2014</a>
+                                </span>
+                            </div>
+                            <div class="post-entry">
+                                <p>
+                                 Interoperability assessment is necessary to identify barriers to interoperability
+                                 and prioritize areas of quality improvement with regard to interoperability. A predictive
+                                 approach to interoperability assessment is desirable since it is more cost effective and can
+                                 support proactive decision making.
+
+                                </p>
+                                <p><a class="btn btn-border" href="http://ki.se/sites/default/files/assessing_lisaamaimurie.pdf">Read more</a></p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-media">
+                            <img alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                            <div class="post-date">
+                                <span class="date-day">17</span>
+                                <span class="date-month">March</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-title">
+                                <h5><a href="http://jhidc.org/index.php/jhidc/article/view/113" target="_blank">
+                                  DHIS2: The Tool to Improve Health Data Demand and Use in Kenya
+                                  </a></h5>
+                            </div>
+                            <div class="post-metadata">
+                                <span class="byline">
+                                    <i class="fa fa-users"></i>
+                                    <a href="#">Josphine Karuri, Peter Waiganjo, Dan Orwa, Ayub Manya</a>
+                                </span>
+                                <span class="cat-links">
+                                    <i class="fa fa-calendar-check-o"></i>
+                                    <a href="#">2014</a>
+                                </span>
+                            </div>
+                            <div class="post-entry">
+                                <p>
+                                 Information garnered from health information systems (HIS) is essential for
+                                 monitoring health, and for evaluating and improving the delivery of health-care services and
+                                 programs. Yet the collection, collation, compilation, analysis and reporting of health data in
+                                 most developing countries is faced with major problems resulting in incomplete, inaccurate
+                                 and untimely data which is not useful for health decision-making.
+
+                                </p>
+                                <p><a class="btn btn-border" href="http://jhidc.org/index.php/jhidc/article/view/113">Read more</a></p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-media">
+                            <img alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                            <div class="post-date">
+                                <span class="date-day">17</span>
+                                <span class="date-month">March</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-title">
+                                <h5><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7190531&tag=1" target="_blank">
+                                Use of data mining to check the prevalence of prostate cancer: Case of Nairobi County
+                                  </a></h5>
+                            </div>
+                            <div class="post-metadata">
+                                <span class="byline">
+                                    <i class="fa fa-users"></i>
+                                    <a href="#">Njeri Ngaruiya, Christopher Moturi</a>
+                                </span>
+                                <span class="cat-links">
+                                    <i class="fa fa-calendar-check-o"></i>
+                                    <a href="#">2015</a>
+                                </span>
+                            </div>
+                            <div class="post-entry">
+                                <p>
+                                  Prostate cancer has been on the rise in the past years and alarming cases being
+                                  found in men in their 20's. The problem is that most of the cases are diagnosed in their late
+                                  stages thus the mortality rate being high. In recent years data driven analytic studies have
+                                  become a common complement with novel research where different tools and algorithms
+                                  are taking a centre stage in cancer research. In this research, the main objective was to use
+                                  data mining to derive patterns which were used in building a prognostic tool
+
+                                </p>
+                                <p><a class="btn btn-border" href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7190531&tag=1">Read more</a></p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-media">
+                            <img alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                            <div class="post-date">
+                                <span class="date-day">17</span>
+                                <span class="date-month">March</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-title">
+                                <h5><a href="http://www.ijsr.net/archive/v3i11/T0NUMTQ4NTU=.pdf" target="_blank">
+                                  A Donor Information Needs Driven Approach to
+                                  Address Kenya’s Declining Blood Donations
+                                  </a></h5>
+                            </div>
+                            <div class="post-metadata">
+                                <span class="byline">
+                                    <i class="fa fa-users"></i>
+                                    <a href="#">Salome Ireri, Peter Waiganjo, Daniel Orwa</a>
+                                </span>
+                                <span class="cat-links">
+                                    <i class="fa fa-calendar-check-o"></i>
+                                    <a href="#">2014</a>
+                                </span>
+                            </div>
+                            <div class="post-entry">
+                                <p>
+                                  The gap between demand and supply of blood is continuously widening as the
+                                  population increases. This is of great concern in Kenya where blood donation figures are
+                                  below the World Health Organization's recommendations. A random cross-sectional survey
+                                  involving 224 respondents using questionnaires, focus group discussions, immersion
+                                  sessions, empathy and observations was undertaken in and around Nairobi. The objective
+                                  of this study was to elicit donor information needs to enable the improvement of donor
+
+                                </p>
+                                <p><a class="btn btn-border" href="http://www.ijsr.net/archive/v3i11/T0NUMTQ4NTU=.pdf">Read more</a></p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-media">
+                            <img alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                            <div class="post-date">
+                                <span class="date-day">17</span>
+                                <span class="date-month">March</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-title">
+                                <h5><a href="https://www.researchgate.net/publication/277559511_Enhancing_Community_Based_Health_Information_System_CBHIS_Reporting_Through_Open-Source_Short_Message_Service-Based_Tool" target="_blank">
+                                  Enhancing Community Based Health Information System (CBHIS) Reporting
+                                  Through Open-Source Short Message Service-Based Tool
+                                  </a></h5>
+                            </div>
+                            <div class="post-metadata">
+                                <span class="byline">
+                                    <i class="fa fa-users"></i>
+                                    <a href="#">Micheal Kagiri, Peter Waiganjo, Daniel Orwa, Ruth Ngechu</a>
+                                </span>
+                                <span class="cat-links">
+                                    <i class="fa fa-calendar-check-o"></i>
+                                    <a href="#">2015</a>
+                                </span>
+                            </div>
+                            <div class="post-entry">
+                                <p>
+                                  Evidence-based strategic decisions, planning, budgeting,
+                                  policy formulation at different health care levels can be made possible with complete, accurate,
+                                  timely health information. However, manual reporting forms continues to increase frequency of errors
+                                  and workload of community health volunteers (CHVs). Mobile penetration rate standing at 79.2% in Kenya
+                                  has been seen as a potential technology avenue to improve current CBHIS process flows. We thus designed
+                                  and piloted a simple SMS-Based reporting system for the CHVs and assessed its impact to improve timeliness
+                                  in reporting, arithmetic accuracy, data completeness, cost in Kinamba Community Unit.
+
+                                </p>
+                                <p><a class="btn btn-border" href="https://www.researchgate.net/publication/277559511_Enhancing_Community_Based_Health_Information_System_CBHIS_Reporting_Through_Open-Source_Short_Message_Service-Based_Tool">Read more</a></p>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                    <article>
+                      {% placeholder publication_item %}
+                    </article>
+                    <!-- post close -->
+                  </div>
+
+                  <!-- pagination begin -->
+                  <div class="pagination-ourter text-center">
+                      <ul class="pagination">
+                          <li><span class="page-numbers current">1</span></li>
+                          <!-- <li><a class="page-numbers" href="#">2</a></li>
+                          <li><a class="page-numbers" href="#">3</a></li>
+                          <li><a class="page-numbers" href="#">4</a></li>
+                          <li><a class="page-numbers" href="#">5</a></li>
+                          <li><a class="page-numbers" href="#">...</a></li>
+                          <li><a class="page-numbers" href="#">25</a></li> -->
+                          <li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
+                      </ul>
+                  </div>
+                  <!-- pagination close -->
+                </div>
+              </div>
+            </div>
+          </div>
 {% endblock content %}

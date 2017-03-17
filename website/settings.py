@@ -183,18 +183,7 @@ CMS_TEMPLATES = (
     ('home.tpl.html', 'Home'),
     ('about-us.tpl.html', 'About Us'),
     ('contact-us.tpl.html', 'Contact Us'),
-    # Services
-    ('services/consultancy.tpl.html', 'Services-Consultancy'),
-    ('services/data-warehousing.tpl.html', 'Services-Data Warehousing'),
-    ('services/system-development.tpl.html', 'Services-System Development'),
-    ('services/system-support.tpl.html', 'Services-System Support'),
-    ('services/training.tpl.html', 'Services-Training'),
-    # Projects
-    ('projects/consultancy.tpl.html', 'Projects-Consultancy'),
-    ('projects/data-warehousing.tpl.html', 'Projects-Data Warehousing'),
-    ('projects/system-development.tpl.html', 'Projects-System Development'),
-    ('projects/system-support.tpl.html', 'Projects-System Support'),
-    ('projects/training.tpl.html', 'Projects-Training'),
+    ('projects.tpl.html', 'Projects'),
     # Resources
     ('resources/manuals.tpl.html', 'Resources-Manuals'),
     ('resources/publications.tpl.html', 'Resources-Publications'),

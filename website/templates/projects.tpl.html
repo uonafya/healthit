@@ -1,0 +1,183 @@
+{% extends "base-main.html" %}
+{% load cms_tags staticfiles %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+<!-- Sub-heading -->
+{% block sub-header %}
+<section id="sub-header-2" class="subheader">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-12">
+                       <h1>Projects</h1>
+                       <ul class="breadcrumbs">
+                           <li><a href="#">Home</a></li>
+                           <b>/</b>
+                           <li class="active">Projects</li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+</section>
+{% endblock sub-header %}
+<!-- Main Content -->
+{% block content %}
+
+<!-- section begin -->
+<!-- content begin -->
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div id="blog-grid" class="blog-grid">
+                <!-- post begin -->
+                <article class="item col-md-4 col-sm-6">
+                    <div class="post-media">
+                        <img  alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                        <div class="post-date">
+                            <span class="date-day">17</span>
+                            <span class="date-month">March</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-title">
+                            <h5><a href="http://jphes.uonbi.ac.ke">JPHES</a></h5>
+                        </div>
+                        <div class="post-metadata">
+                            <span class="byline">
+                                <i class="fa fa-user"></i>
+                                <a href="#">HealthIT/UoN</a>
+                            </span>
+                            <span class="cat-links">
+                                <i class="fa fa-calendar-check-o"></i>
+                                <a href="#">2015/2016</a>
+                            </span>
+
+                        </div>
+                        <div class="post-entry">
+                            <p>It is a DHIS2 based platform customized for partner reporting, data attribution
+                              and analysis.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="item col-md-4 col-sm-6">
+                    <div class="post-media">
+                        <img  alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                        <div class="post-date">
+                            <span class="date-day">17</span>
+                            <span class="date-month">March</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-title">
+                            <h5><a href="">Malaria Stock Monitoring Tool</a></h5>
+                        </div>
+                        <div class="post-metadata">
+                            <span class="byline">
+                                <i class="fa fa-user"></i>
+                                <a href="#">HealthIT/UoN</a>
+                            </span>
+                            <span class="cat-links">
+                                <i class="fa fa-calendar-check-o"></i>
+                                <a href="#">2015/2016</a>
+                            </span>
+
+                        </div>
+                        <div class="post-entry">
+                            <p>A tool to monitor and analyze malaria commodities data from DHIS2-Kenya.
+                              Supported by MSH
+                            </p>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article class="item col-md-4 col-sm-6">
+                    <div class="post-media">
+                        <img  alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                        <div class="post-date">
+                            <span class="date-day">17</span>
+                            <span class="date-month">March</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-title">
+                            <h5><a href="">Supply Chain Hierarchy Tool</a></h5>
+                        </div>
+                        <div class="post-metadata">
+                            <span class="byline">
+                                <i class="fa fa-user"></i>
+                                <a href="#">HealthIT/UoN</a>
+                            </span>
+                            <span class="cat-links">
+                                <i class="fa fa-calendar-check-o"></i>
+                                <a href="#">2015/2016</a>
+                            </span>
+
+                        </div>
+                        <div class="post-entry">
+                            <p>Address the analysis and reporting  gap of
+                              NASCOP-ART hierarchy that is not captured in DHIS2. Supported by MSH
+                            </p>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article class="item col-md-4 col-sm-6">
+                    <div class="post-media">
+                        <img  alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                        <div class="post-date">
+                            <span class="date-day">17</span>
+                            <span class="date-month">March</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-title">
+                            <h5><a href="">EDITT</a></h5>
+                        </div>
+                        <div class="post-metadata">
+                            <span class="byline">
+                                <i class="fa fa-user"></i>
+                                <a href="#">HealthIT/UoN</a>
+                            </span>
+                            <span class="cat-links">
+                                <i class="fa fa-calendar-check-o"></i>
+                                <a href="#">2015/2016</a>
+                            </span>
+
+                        </div>
+                        <div class="post-entry">
+                            <p>Improvements and customization of the tool. Supported by MSH</p>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article class="item col-md-4 col-sm-6">
+                  {% placeholder project_item %}
+                </article>
+                <!-- post close -->
+            </div>
+
+            <!-- pagination begin -->
+            <!-- <div class="pagination-ourter text-center">
+                <ul class="pagination">
+                    <li><span class="page-numbers current">1</span></li>
+                    <li><a class="page-numbers" href="#">2</a></li>
+                    <li><a class="page-numbers" href="#">3</a></li>
+                    <li><a class="page-numbers" href="#">4</a></li>
+                    <li><a class="page-numbers" href="#">5</a></li>
+                    <li><a class="page-numbers" href="#">...</a></li>
+                    <li><a class="page-numbers" href="#">25</a></li>
+                    <li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+            </div> -->
+            <!-- pagination close -->
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

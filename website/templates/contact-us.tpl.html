@@ -1,5 +1,5 @@
 {% extends "base-main.html" %}
-{% load cms_tags %}
+{% load cms_tags staticfiles %}
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
@@ -27,50 +27,38 @@
            <section id="section-contact">
                <div class="container">
                    <div class="row">
-                       <div class="col-md-8">
-                           <div class="text-left">
-                               <h4>Get in touch</h4>
-                               <div class="tiny-border"></div>
-                               <p>For any queries</p>
-                           <form action="" class="wpcf7-form">
-                               <div class="col-one-third">
-                                   <input type="text" placeholder="Your Name">
-                               </div>
-                               <div class="col-one-third margin-one-third">
-                                   <input type="email" placeholder="Your Email">
-                               </div>
-                               <div class="col-one-third">
-                                   <input type="text" placeholder="Your Phone">
-                               </div>
-                               <div class="col-full"><textarea placeholder="Your Message"></textarea></div>
-                               <div class="clearfix"></div>
-                               <div class="text-center">
-                                   <div class="divider-single"></div>
-                                   <button class="btn btn-primary btn-big">Send Email</button>
-                               </div>
-                           </form>
-                       </div>
+
+                     <div class="col-md-8">
+                       <h4>Location</h4>
+                        <div class="tiny-border"></div>
+                         <div id="map-canvas" class="map-canvas"></div>
                      </div>
-                       <div class="col-md-4">
-                           <h4>GENERAL INFO</h4>
-                           <div class="tiny-border"></div>
-                           <ul class="contact-list">
-                               <li><i class="fa fa-location-arrow"></i> Riverside Drive, Chiromo</li>
-                               <li><i class="fa fa-phone"></i> +254-</li>
-                               <li><i class="fa fa-envelope"></i> <a href="mailto:c4hi@uonbi.ac.ke" target="_top">c4hi@uonbi.ac.ke</a></li>
-                               <li><i class="fa fa-globe"></i> <a href="http://c4hi.uonbi.ac.ke">c4hi.uonbi.ac.ke</a></li>
-                           </ul>
-                           <h4>WORKING HOURS</h4>
-                           <div class="tiny-border"></div>
-                           <ul class="contact-list">
-                               <li><i class="fa fa-clock-o"></i> Monday–Friday: 8am to 5pm</li>
-                               <li><i class="fa fa-times-circle"></i> Saturday: Closed</li>
-                               <li><i class="fa fa-times-circle"></i> Sunday: Closed</li>
-                           </ul>
-                       </div>
+                     <div class="col-md-4">
+                         <h4>GENERAL INFO</h4>
+                         <div class="tiny-border"></div>
+                         <ul class="contact-list">
+                             <li><i class="fa fa-location-arrow"></i> Riverside Drive, Chiromo</li>
+                             <!-- <li><i class="fa fa-phone"></i> +254-</li> -->
+                             <li><i class="fa fa-envelope"></i> <a href="mailto:info@healthit.uonbi.ac.ke" target="_top">info[at]healthit.uonbi.ac.ke</a></li>
+                             <li><i class="fa fa-globe"></i> <a href="http://healthit.uonbi.ac.ke">healthit.uonbi.ac.ke</a></li>
+                         </ul>
+                         <h4>WORKING HOURS</h4>
+                         <div class="tiny-border"></div>
+                         <ul class="contact-list">
+                             <li><i class="fa fa-clock-o"></i> Monday–Friday: 8am to 5pm</li>
+                             <li><i class="fa fa-times-circle"></i> Saturday: Closed</li>
+                             <li><i class="fa fa-times-circle"></i> Sunday: Closed</li>
+                         </ul>
+                     </div>
+
                    </div>
                </div>
            </section>
            <!-- section close -->
 
+
 {% endblock content %}
+
+{% block contact_js %}
+ <script type="text/javascript" src="{% static 'js/contact.js' %}"></script>
+{% endblock contact_js %}

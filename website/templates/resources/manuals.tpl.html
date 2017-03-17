@@ -1,5 +1,5 @@
 {% extends "base-main.html" %}
-{% load cms_tags %}
+{% load cms_tags staticfiles %}
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
@@ -22,5 +22,50 @@
 {% endblock sub-header %}
 <!-- Main Content -->
 {% block content %}
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="blog-list">
+                    <!-- post begin -->
+                    <article>
+                      <div class="post-media">
+                          <img alt="" src="{% static 'images/news/2.jpg' %}" class="img-responsive">
+                          <div class="post-date">
+                              <span class="date-day">22</span>
+                              <span class="date-month">May</span>
+                          </div>
+                      </div>
+                      <div class="post-content">
+                          <div class="post-title">
+                              <h5><a href="blog-single.html">JPHES Quickstart</a></h5>
+                          </div>
+                          <div class="post-metadata">
+                              <span class="byline">
+                                  <i class="fa fa-user"></i>
+                                  <a href="#">HealthIT/UoN</a>
+                              </span>
+                              <span class="cat-links">
+                                  <i class="fa fa-calender-check-o"></i>
+                                  <a href="#">2017</a>
+                              </span>
+
+                          </div>
+                          <div class="post-entry">
+                              <p>JPHES documentation, JPHES servicedesk, Test and Portal</p>
+                              <p><a class="btn btn-border" href="http://jphes.uonbi.ac.ke">Read more</a></p>
+                          </div>
+                      </div>
+                    </article>
+                    <article>
+                      {% placeholder manual_item%}
+                    </article>
+                    <!-- post close -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
 {% endblock content %}
