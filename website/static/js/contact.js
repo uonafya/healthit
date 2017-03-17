@@ -8,7 +8,7 @@
             map_zoom = 14;
 
         var locations = [
-            ['<div class="infobox"><span>HealthIT<span></div>', latitude, longitude, 2]
+            ['<div class="infobox"><span>HealthIT/UoN<span></div>', latitude, longitude, 2]
         ];
 
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
