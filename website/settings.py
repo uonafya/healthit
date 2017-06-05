@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '+j0mm9c=)!shf3^3oidgf6p3n(l+@g6kceph(lxjot*z4o(8et'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -183,7 +183,7 @@ CMS_TEMPLATES = (
     ('home.tpl.html', 'Home'),
     ('about-us.tpl.html', 'About Us'),
     ('contact-us.tpl.html', 'Contact Us'),
-    ('projects.tpl.html', 'Projects'),
+    ('projects.tpl.html', 'Systems'),
     # Resources
     ('resources/manuals.tpl.html', 'Resources-Manuals'),
     ('resources/publications.tpl.html', 'Resources-Publications'),
